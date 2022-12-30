@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+ :root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Overpass", sans-serif;
+} 
+
+body {
+  background-color: rgb(223, 213, 213);
+  color: rgb(6, 6, 6);
+  font-family: var(--primary-font);
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+
+  background-color: white;
+  color: black;
+}
+.highlightBtn{
+    background-color: rgb(93, 4, 75);
+    color: whitesmoke;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.darkModeBtn {
+  background-color:rgb(48, 40, 40);
+  color: white;
+  font-weight: 800;
+}
+
+.darkModeBtn:hover {
+  background-color: rgb(51, 50, 50);
+  color:white;
+  box-shadow: 2px 4px 10px rgb(21, 20, 20);
+}
+
+.main {
+  margin: 20px auto;
+  width: 80vw;
+  background-color: rgb(162, 92, 117);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px rgba(53, 53, 53, 0.572);
+}
+
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 20px;
+}
+
+.resultContainer h1 {
+  margin: 0;
+}
+
+/* .question, */
+.optionsContainer {
+  margin: 30px 10px;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+  font-size: 24px;
+}
+
+.optionsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.option:hover {
+  box-shadow: 2px 2px 10px rgba(53, 53, 53, 0.572);
+}
+
+.restartBtn:hover {
+  box-shadow: 2px 2px 10px rgba(53, 53, 53, 0.572);
+}
+
+.highLightBtnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 50px;
+}
+
+
+
+body.dark {
+  background-color: rgb(67, 57, 62);
+  color: rgb(255, 255, 255);
+}
+
+body.dark button {
+  background-color: rgb(232, 205, 232);
+  color: rgb(32, 30, 30);
+}
+
+body.dark .darkModeBtn {
+  background-color: rgb(213, 205, 205);
+  color: black;
+}
+
+body.dark .darkModeBtn:hover {
+  background-color: rgb(162, 156, 156);
+  color:white;
+  box-shadow: 2px 4px 10px rgb(253, 253, 253);
+}
+
+
+
+.question.secondary {
+  color: yellow;
+}
+
+@media (max-width: 600px) {
+  .optionsContainer {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
